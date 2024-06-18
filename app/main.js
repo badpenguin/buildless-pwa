@@ -37,7 +37,7 @@ export function MainApp() {
 	console.debug('- render MainApp');
 	return html`
 		${$loading.value ? null : html`
-			<${Router} basename="https://badpenguin.github.io/buildless-pwa/" >
+			<${Router}>
 				<${PageHome} path="/"/>
 				<${PageNotFound} default/>
 			<//>`}

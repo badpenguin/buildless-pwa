@@ -63,8 +63,8 @@
 	<link rel="stylesheet" href="/assets/fonts/roboto-v30-latin/load.css"/>
 	-->
 	<!-- Customize with your css -->
-	<link rel="stylesheet" href="./app/dist/vanilla.min.css"/>
-	<link rel="stylesheet" href="./css/index.css"/>
+	<link rel="stylesheet" href="/app/dist/vanilla.min.css"/>
+	<link rel="stylesheet" href="/css/index.css"/>
 
 	<!-- polyfill ES Modules -->
 	<script async src="https://ga.jspm.io/npm:es-module-shims@1.7.3/dist/es-module-shims.js"></script>
@@ -83,7 +83,7 @@
 	</script>
 
 	<!-- Load my Vanilla JS library -->
-	<script src="./app/dist/vanilla.min.js"></script>
+	<script src="/app/dist/vanilla.min.js"></script>
 
 	<!--
 	standalone.js contains:
@@ -94,12 +94,12 @@
 	<script type="importmap">
       {
         "imports": {
-          "preact": "./app/dist/standalone.js",
-          "preact/hooks": "./app/dist/standalone.js",
-		  "htm": "./app/dist/standalone.js",
-          "@preact/signals": "./app/dist/standalone.js",
-          "@preact/signals-core": "./app/dist/standalone.js",
-          "preact-router": "./app/dist/preact-router.module.js"
+          "preact": "/app/dist/standalone.js",
+          "preact/hooks": "/app/dist/standalone.js",
+		  "htm": "/app/dist/standalone.js",
+          "@preact/signals": "/app/dist/standalone.js",
+          "@preact/signals-core": "/app/dist/standalone.js",
+          "preact-router": "/app/dist/preact-router.module.js"
         }
       }
 
@@ -108,7 +108,7 @@
 	<!-- bootstrap your apo -->
 	<script type="module">
 		import {h, render} from 'preact';
-		import {MainApp} from './app/main.js';
+		import {MainApp} from '/app/main.js';
 
 		window.onload = function() {
 			console.log('* onload');
